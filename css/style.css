@@ -67,8 +67,131 @@ color: #FFFFFF;
 .background{
     background-size: cover;
     background-color:#F7F7F7;
+    height:300px;
 }
+.projects{
+    margin-top:100px;
+    margin-bottom:60px;
+    width:506px;
+    margin-left:506px;
+font-family: Oswald;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 53px;
+text-transform: uppercase;
+}
+.box2{
+    display:grid;
+    grid-template-columns: repeat(3,minmax(142px,350px));
+    grid-template-rows: 380px 29px 83px;
+    grid-template-areas: "build build2 build3"
+                         "yellow_line yellow_line2 yellow_line3"
+                         "gazprom gazprom2 gazprom3"
+                         "text_gazprom text_gazprom2 text_gazprom3";
+                         justify-content:center;
+                         column-gap: 30px;
+                         row-gap: 45px;
+                         
+}
+.yellow_line{
+    grid-area:yellow_line;
+}
+.yellow_line2{
+    grid-area:yellow_line2;
+}
+.yellow_line3{
+    grid-area:yellow_line3;
+}
+.gazprom{
+width: 142px;
+height: 29px;
+grid-area:gazprom;
 
+font-family: Oswald;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+
+
+color: #404149;
+}
+.gazprom2{
+    width: 142px;
+    height: 29px;
+    grid-area:gazprom2;
+    /* h3 */
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* Dark */
+    
+    color: #404149;
+}   
+.gazprom3{
+    width: 142px;
+    height: 29px;
+    grid-area:gazprom3;
+    /* h3 */
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* Dark */
+    
+    color: #404149;
+}
+.text_gazprom{
+    grid-area:text_gazprom;
+width: 350px;
+height: 83px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+
+color: #999999;
+}
+.text_gazprom2{
+    grid-area:text_gazprom2;
+width: 350px;
+height: 83px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+
+color: #999999;
+}
+.text_gazprom3{
+    grid-area:text_gazprom3;
+width: 350px;
+height: 83px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+
+color: #999999;
+}
+.build{
+    grid-area:build;
+    
+}
+.build2{
+    grid-area:build2;
+    
+}
+.build3{
+    grid-area:build3;
+}
 .items{
     display:flex;
     flex-wrap:wrap;
@@ -83,6 +206,10 @@ color: #FFFFFF;
 }
 /* intro styles end */
 .menu{
+    margin-top:30px;
     width: 50px;
     height: 50px;
+}
+.logo{
+    margin-top:20px;
 }

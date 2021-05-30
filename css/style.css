@@ -1,3 +1,4 @@
+
 /* header styles start */
 html{
 box-sizing: border-box;
@@ -13,10 +14,57 @@ body{
     margin:0 auto;
 }
 .container{
-    display:grid;
-    grid-template-columns:repeat(2,minmax(50px,60px));
+    display: flex;
     justify-content: space-between;
+    align-content: center;
 }
+
+.pismo{
+    margin-top:150px;
+    margin-bottom:150px;
+    height:181px;
+    
+    background-color: rgba(221, 28, 28, 0.87);
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(175px,575px));
+ justify-content: space-between;
+   
+}
+.pismo_left{
+    margin-left:405px;
+}
+.logo_pismo{
+    margin-bottom: 59px;
+    margin-top: 73px;
+}
+.text_pismo_bottom{
+width: 562px;
+height: 29px;
+font-family: Oswald;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.02em;
+margin-bottom: 45px;
+color: #FFFFFF;
+}
+.text_pismo{
+    margin-bottom: 20px;
+    margin-top: 30px;
+width: 537px;
+height: 57px;
+font-family: Oswald;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 71px;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+
+}
+
 
 .text{
     margin-left: auto;
@@ -73,7 +121,8 @@ color: #FFFFFF;
     margin-top:100px;
     margin-bottom:60px;
     width:506px;
-    margin-left:506px;
+    margin-left:auto;
+    margin-right:auto;
 font-family: Oswald;
 font-style: normal;
 font-weight: 500;
@@ -82,45 +131,28 @@ line-height: 53px;
 text-transform: uppercase;
 }
 .box2{
-    display:grid;
-    grid-template-columns: repeat(3,minmax(142px,350px));
-    grid-template-rows: 380px 29px 83px;
-    grid-template-areas: "build build2 build3"
-                         "yellow_line yellow_line2 yellow_line3"
-                         "gazprom gazprom2 gazprom3"
-                         "text_gazprom text_gazprom2 text_gazprom3";
-                         justify-content:center;
-                         column-gap: 30px;
-                         row-gap: 45px;
+    width: 1110px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+   
                          
-}
-.yellow_line{
-    grid-area:yellow_line;
-}
-.yellow_line2{
-    grid-area:yellow_line2;
-}
-.yellow_line3{
-    grid-area:yellow_line3;
 }
 .gazprom{
 width: 142px;
 height: 29px;
-grid-area:gazprom;
-
 font-family: Oswald;
 font-style: normal;
 font-weight: 500;
 font-size: 24px;
 line-height: 36px;
-
-
 color: #404149;
+margin-bottom:20px;
 }
 .gazprom2{
     width: 142px;
     height: 29px;
-    grid-area:gazprom2;
+
     /* h3 */
     font-family: Oswald;
     font-style: normal;
@@ -130,11 +162,12 @@ color: #404149;
     /* Dark */
     
     color: #404149;
+    margin-bottom:20px;
 }   
 .gazprom3{
     width: 142px;
     height: 29px;
-    grid-area:gazprom3;
+  
     /* h3 */
     font-family: Oswald;
     font-style: normal;
@@ -144,9 +177,9 @@ color: #404149;
     /* Dark */
     
     color: #404149;
+    margin-bottom:20px;
 }
 .text_gazprom{
-    grid-area:text_gazprom;
 width: 350px;
 height: 83px;
 font-family: Open Sans;
@@ -157,8 +190,11 @@ line-height: 22px;
 
 color: #999999;
 }
+a{
+    text-decoration: none;
+}
 .text_gazprom2{
-    grid-area:text_gazprom2;
+
 width: 350px;
 height: 83px;
 font-family: Open Sans;
@@ -182,21 +218,34 @@ line-height: 22px;
 color: #999999;
 }
 .build{
-    grid-area:build;
-    
+    margin-bottom:45px;
 }
 .build2{
-    grid-area:build2;
-    
+    margin-bottom:45px;
 }
 .build3{
-    grid-area:build3;
+    margin-bottom:45px;
 }
+.yellow_line{
+margin-bottom:15px;
+}
+.yellow_line2{
+margin-bottom:15px;
+ }
+.yellow_line3{
+  margin-bottom:15px;
+}
+
 .items{
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
     margin-top:-150px;
+}
+.items a{
+    
+    display:grid;
+    align-content: center;
 }
 .item{
     margin-left:30px;
@@ -207,9 +256,149 @@ color: #999999;
 /* intro styles end */
 .menu{
     margin-top:30px;
+    margin-bottom: 10px;
     width: 50px;
     height: 50px;
+    margin-right: 0;
 }
 .logo{
     margin-top:20px;
+}
+.text_builds{
+width: 351px;
+height: 43px;
+font-family: Oswald;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 53px;
+text-transform: uppercase;
+color: #000000;
+margin:0 auto;
+}
+
+.many_builds{
+    display:grid;
+    grid-template-columns: repeat(3,350px);
+    grid-template-rows: repeat(3,250px);
+    gap:30px;
+    justify-content: center;
+}
+.with_builds{
+    display:grid;
+    grid-template-columns: repeat(4,480px);
+    grid-template-rows: repeat(4,407px);
+    height:814px;
+}
+.answers{
+    margin-top:150px;
+    margin-left:405px;
+    margin-bottom:150px;
+}
+.bershka{
+    background-color:rgb(30, 32, 32);
+    height:364px;
+    padding-top:100px;
+    width: 1920px;
+    margin-bottom: 150px;
+}
+.text_bershka{
+width: 256px;
+height: 43px;
+font-family: Oswald;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 53px;
+text-transform: uppercase;
+margin-left: 832px;
+color: #FFFFFF;
+}
+.many_bershka{
+    margin-top: 60px;
+    margin-left:auto;
+    margin-right: auto;
+    width: 1110px;
+    display:grid;
+    grid-template-columns: repeat(6,170px);
+    column-gap: 35px;
+}
+.feedbacks{
+width: 398px;
+height: 53px;
+
+margin-bottom: 150px;
+font-family: Oswald;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 53px;
+text-transform: uppercase;
+margin-left: auto;
+margin-right: auto;
+color: #000000;
+
+}
+.box_container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box3{
+    width: 1110px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(3,350px);
+    column-gap: 30px;
+   margin-bottom: 150px;
+}
+
+.Ivan{
+   margin-top:100px;
+}
+.contacts_text{
+width: 159px;
+height: 53px;
+font-family: Oswald;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 53px;
+text-transform: uppercase;
+margin: 0 auto;
+color: #000000;
+margin-bottom: 60px;
+}
+.things{
+  
+    display:grid;
+    grid-template-columns: repeat(4,255px);
+    column-gap: 30px;
+    justify-content: center;
+    margin-bottom: 232px;
+}
+
+.lorem{
+width: 290px;
+height: 142px;
+margin-top: 10px;
+margin-bottom: 30px;
+
+/* p-reviews */
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+/* or 150% */
+
+
+/* gray */
+
+color: #999999;
+}
+footer{
+    height: 82px;
+    background:url(../img/footer.jpg) no-repeat center;
 }
